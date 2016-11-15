@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="quoteBook">
+  <head>
+    <meta charset="utf-8">
+    <title>quoteBook</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body ng-controller="mainController">
+
+    {{thisAppisBroken}}
+
+    <div ng-repeat="quote in quotes">
+      <p>]{{quote.text}}</p>
+      <p>{{quote.author}}</p>
+    </div>
+
+    <input type="text"/>
+    <input type="text"/>
+    <input type="text"/>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
+<script src="app.js"></script>
+<script src="controller.js"></script>
+<script src="dataService.js"></script>
+  </body>
+</html>
